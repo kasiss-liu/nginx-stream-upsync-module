@@ -1765,7 +1765,7 @@ ngx_stream_upsync_etcd_parse_json(void *data)
                 }
             }
             temp1 = NULL;
-
+            cJSON_Delete(sub_attribute);
         } else {
             continue;
         }
